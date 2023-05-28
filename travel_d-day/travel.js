@@ -11,7 +11,7 @@ result.innerText = passedDay;
 
 // 현재 뉴욕 날짜 
 const now = new Date();
-now.setHours(now.getHours() - 13);
+now.setHours(now.getHours() - 13); // 대한민국 날짜와 13시간 차이 반영
 const year = now.getFullYear();    // 연도
 const month = now.getMonth() + 1;   // 월(0~11) + 1
 const date = now.getDate();  // 날짜
@@ -40,7 +40,7 @@ displayDate.innerHTML = `${year}년 ${month}월 ${date}일
 // 현재 뉴욕 시간 구하기
 let clock = () => {
   let current = new Date();
-  current.setHours(current.getHours() - 13);
+  current.setHours(current.getHours() - 13); // 대한민국 날짜와 13시간 차이 반영
   let hrs = current.getHours();
   let mins = current.getMinutes();
   let secs = current.getSeconds();
